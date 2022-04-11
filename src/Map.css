@@ -1,0 +1,12 @@
+.map{
+    background-color: rgb(255, 255, 255);
+    flex: 1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    font-style: sans-serif;
+    font-size: 15px;
+    border-radius: 4px;
+    padding: 1rem;
+    color: rgb(17, 30, 149);
+}
