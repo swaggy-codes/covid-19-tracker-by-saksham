@@ -97,26 +97,20 @@ function App() {
       <div className="app__left">
         <div className="app__header">
           <Nav>
-            <div className="heading">
-              <h1 align="center">Covid 19 Tracker by Saksham Gupta</h1>
-            </div>
             <NavMenu>
-              <a href="/home">
-                <img src="/images/home-icon.svg" alt="Home!"></img>
-                <span>HOME</span>
-              </a>
-              <a>
-                <img src="/images/search-icon.svg" alt="SEARCH" />
-                <span>SEARCH</span>
-              </a>
+              <div className="heading">
+                <h1 align="center">Covid 19 Tracker by Saksham Gupta</h1>
+              </div>
               <a>
                 <img src="/images/coronavirus.png" alt="ORIGINALS" />
                 <span>DROPDOWN FOR COUNTRIES</span>
               </a>
+            </NavMenu>
+            <div className="dropdown">
               <FormControl className="app__dropdown">
-                <Select className="menu__Item" variant="outlined" value={country} onChange={onCountryChange} /*{default={}}*/>
+                <Select className="menu__Item" variant="outlined" onChange={onCountryChange} value={country} /*{default={}}*/>
                   {/*Now, Loop through all the countries and show a dropdown list of the options*/}
-                  <MenuItem placeHolder="worldwide" value="worldwide"><b>Worldwide</b></MenuItem>
+                  <MenuItem value="worldwide"><b>Worldwide</b></MenuItem>
                   {
                     countries.map((country) => (
                       <MenuItem value={country.value}>{country.name}</MenuItem>
@@ -127,7 +121,7 @@ function App() {
                 <MenuItem value="worldwide">Option 4</MenuItem> */}
                 </Select>
               </FormControl>
-            </NavMenu>
+            </div>
             {/*<Login onClick={handleAuth}>LogIn</Login>*/}
             { /*<h4>MCA-II-Year Project "Major"</h4> */}
           </Nav>
@@ -254,7 +248,7 @@ const NavMenu = styled.div`
         }
     }
 
-    @media (max-width: 900px) {
+    @media (max-width: 50px) {
         display: none;
     }
 `;
