@@ -2,12 +2,12 @@
     flex : 1
 }
 .infoBox:not(last-child){
-    background-color: rgb(255, 187, 61);
+    background-color: rgb(106, 243, 232);
     margin-right: 10px;
 }
 
 .infoBox__cases {
-    background-color: rgb(255, 187, 61)e;
+    background-color: rgb(106, 243, 232);
     color: #cc1034;
     font-weight : 600;
     font-size : 1.75rem;
